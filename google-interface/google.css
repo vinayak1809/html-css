@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.795);
+  cursor: pointer;
+}
+
+nav ul li,
+section ul li {
+  list-style: none;
+  padding: 8px;
+  font-weight: 500;
+}
+.e {
+  font-weight: bolder;
+  font-size: 120px;
+  font-family: "Josefin Slab", serif !important;
+}
+section ul {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  margin: 20px auto;
+  font-family: "Arimo", sans-serif;
+}
+section ul li {
+  font-size: 100px;
+  padding: 0px 0px;
+  margin: 0px;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 100px 80px;
+  justify-content: center;
+  align-content: center;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 45%;
+  align-items: center;
+  border-radius: 25px;
+  padding: 1px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search textarea {
+  flex-grow: 1;
+}
+
+textarea::placeholder {
+  padding: 5px;
+  cursor: text;
+  font-family: Roboto, "Ubuntu", Arial, sans-serif;
+  font-size: 1rem;
+  text-indent: 30px 0px;
+}
+footer {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 81.25%;
+  justify-content: flex-end;
+  padding: 3px 0px 3px 18px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: rgb(26, 115, 232);
+}
+button {
+  font-family: Roboto, "Ubuntu", Arial, sans-serif;
+  background-color: transparent;
+  border-style: none;
+  border: none;
+  color: rgb(26, 115, 232);
+  cursor: pointer;
+}
+textarea {
+  border: none;
+  background-color: transparent;
+  overflow: hidden;
+  padding: 7px 10px 3px 7px;
+  text-align: left;
+  text-decoration: none;
+  border-style: none;
+  outline: none;
+  resize: none;
+}
+span {
+  font-size: 20px !important;
+}
