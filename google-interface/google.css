@@ -74,17 +74,18 @@ textarea {
   border: none;
   background-color: transparent;
   overflow: hidden;
-  padding: 7px 10px 3px 7px;
+  padding: 3px 10px 3px 7px;
+  height: 32px;
   text-align: left;
   text-decoration: none;
   border-style: none;
   outline: none;
   resize: none;
+  box-sizing: border-box;
   flex-grow: 1;
 }
 
 textarea::placeholder {
-  padding: 5px;
   cursor: text;
   font-family: Roboto, "Ubuntu", Arial, sans-serif;
   font-size: 1rem;
@@ -124,6 +125,26 @@ nav ul li span:hover {
   padding: 5px;
 }
 
+section ul li:nth-child(1),
+li:nth-child(4) {
+  color: #0000ff;
+}
+section ul li:nth-child(2),
+li:nth-child(6) {
+  color: rgba(218, 6, 6, 0.767);
+}
+section ul li:nth-child(3) {
+  color: rgb(255, 219, 50);
+}
+section ul li:nth-child(5) {
+  color: rgb(80, 151, 80);
+}
+
+section .search textarea[edit="edit"] {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: arial, sans-serif;
+}
 @media only screen and (max-width: 700px) {
   button {
     display: none;
