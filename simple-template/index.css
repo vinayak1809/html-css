@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: blue;
+}
 .sec {
   display: flex;
   flex-direction: column;
@@ -23,6 +26,9 @@ nav {
   align-items: center;
   font-family: "Balsamiq Sans", cursive;
   font-size: 1rem;
+}
+nav .material-icons {
+  display: none;
 }
 nav .home ul,
 nav .login ul,
@@ -45,8 +51,8 @@ nav .login ul button {
   padding: 10px;
   font-weight: bolder;
   background-color: transparent;
-  border: 2px solid blue;
-  color: blue;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 /* navbar section end*/
 
@@ -63,7 +69,7 @@ header .well {
   margin-bottom: 40px;
   text-align: center;
   font-size: 1.2rem;
-  color: blue;
+  color: var(--primary-color);
 }
 
 header .text {
@@ -93,7 +99,7 @@ header button {
   padding: 10px 15px;
   width: 150px;
   background-color: transparent;
-  border: 2px solid blue;
+  border: 2px solid var(--primary-color);
   color: white;
 }
 
@@ -165,3 +171,30 @@ main .about .topic_info {
 }
 
 /* main section end*/
+
+@media screen and (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .home ul {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    height: 20px;
+    padding: 10px auto;
+    width: 20px;
+  }
+  nav .home span {
+    display: block;
+  }
+  nav .home span:hover + ul {
+    display: block;
+  }
+  nav .home span:hover {
+    display: none;
+  }
+}
