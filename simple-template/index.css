@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sec {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  background-color: rgb(4, 4, 58);
+  color: white;
+}
+
+/* navbar section start */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  align-items: center;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 1rem;
+}
+nav .home ul,
+nav .login ul,
+header div ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+nav .home ul li,
+nav .login ul li {
+  width: 70px;
+}
+
+nav .login ul button {
+  box-sizing: border-box;
+  width: 100px;
+  padding: 10px;
+  font-weight: bolder;
+  background-color: transparent;
+  border: 2px solid blue;
+  color: blue;
+}
+/* navbar section end*/
+
+/* header section start */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .well {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: blue;
+}
+
+header .text {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 30px;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+header .info {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+header .but ul {
+  display: flex;
+  flex-direction: row;
+  width: 50vh;
+  margin: 10px auto;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+header button {
+  margin: 10px auto;
+  padding: 10px 15px;
+  width: 150px;
+  background-color: transparent;
+  border: 2px solid blue;
+  color: white;
+}
+
+header button:hover,
+nav .login ul button:hover {
+  background-color: rgba(34, 34, 194, 0.89);
+  color: wheat;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+/* header section end */
+
+/*main section start */
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100vh;
+  margin: auto;
+  justify-content: space-between;
+  margin: auto;
+}
+
+main .about {
+  width: 40vh;
+  height: 200px;
+  margin: 20px 20px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+main .about span {
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 20%;
+}
+main .about_one span {
+  background-color: rgb(221, 145, 145);
+  color: rgb(240, 73, 73);
+}
+main .about_two span {
+  background-color: rgb(176, 243, 75);
+  color: green;
+}
+
+main .about_three span {
+  background-color: rgb(248, 194, 232);
+  color: rgb(158, 60, 129);
+}
+hr {
+  width: 60px;
+}
+
+main .about .topic {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 0px;
+}
+
+main .about .topic_info {
+  color: black;
+  font-style: oblique;
+  font-size: 0.7rem;
+  padding-top: 10px;
+}
+
+/* main section end*/
